@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title> HACKERS STORE </title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </Head>
+
+    <body>
+        <div class="header" style="background: linear-gradient(rgb(62, 62, 90),rgba(79, 79, 114,0.7),rgba(79, 79, 114, 0.4),rgba(79, 79, 114, 0))">
+            <div class="container" >
+                <div class="navbar">
+                    <div class="logo">
+                    <a href="index.html"><img src="Images/LogoName.png" alt="Logo" width = "150px" ></a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="Images/cart.png" alt="cart" width="30px" height="30px">
+                    <img src="Images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
+                </div>    
+            </div>
+        </div>
+        <!---------products----------->
+    <div class="products">
+        <div class="small-container">
+            <div class="row row-2"> 
+                <h2>ALL PRODUCTS</h2> 
+                <select>
+                    <option>Default sorting</option>
+                    <option>sort by price</option>
+                    <option>sort by popularity</option>
+                    <option>sort by rating</option>
+                    <option>sort by sale </option>
+                </select>
+            </div>
+
+                <div class="row">
+                <div class="col-4">
+                <a href="Products_info.html"><img src="Images/product-1.jpg" alt="laptop" ></a>
+                <a href="Products_info.html"><h4>Gaming Laptop</h4></a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$1200.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/product-2.jpg" alt="Ultra-Wide Screen">
+                    <h4>Ultra-Wide Screen</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$470.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/Product-3.jpg" alt="Router">
+                    <h4>Wifi Router</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$120.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/product-4.jpg" alt="Computer Case ">
+                    <h4>Computer Case</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$1200.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="Images/product5.jpg" alt="RGB Mouse">
+                    <h4>RGB Fanta Black Mouse</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$70.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/product-6.jpg" alt="RGB Fancy white keyboard">
+                    <h4>RGB Fancy white keyboard</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$100.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/product-7.jpg" alt="Macbook Pro">
+                    <h4>Macbook Pro</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$2000.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/product-8.jpg" alt="flash disk ">
+                    <h4>San Disk 64GB Flash Memory</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$20.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="Images/product-9.jpg" alt="Wide Screen">
+                    <h4>Wide SAMSUNG Screen </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$150.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/product-10.jpg" alt="Laptop Table">
+                    <h4>Laptop Effective Stand</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$70.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/product-11.jpg" alt="Wireless Lan usb Adaptor">
+                    <h4>Wireless Lan usb Adaptor</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$30.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/product-12.jpg" alt="Fanta Black Mouse Pad ">
+                    <h4>Fanta Black Mouse Pad</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$10.00</p>
+                </div>
+            </div>
+            
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594;</span>
+            </div>
+        </div>
+
+    <!----------footer---------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="Images/play-store.png" alt="play-store">
+                        <img src="Images/app-store.png" alt="app-store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Images/logo.png" alt="logo">
+                    <p>Our Purpose is to help all hackers around world <br>only ethical one XD </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate </li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                    <li>Youtube</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Facebook </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - FCI Students</p>
+        </div>
+    </div>
+<!-------------JS For toggle Menu -------------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+<!-------------JS For fading effect -------------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    </body>
+
+</html>

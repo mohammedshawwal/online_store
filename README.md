@@ -1,2 +1,2 @@
-# online_store
-web online store ui only
+# Hackers-Store
+E-commerce project for FCI university
